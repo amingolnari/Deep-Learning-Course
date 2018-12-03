@@ -2,7 +2,7 @@
 github : https://github.com/amingolnari/Deep-Learning-Course
 Author : Amin Golnari
 TF Version : 1.12.0
-Year : 3/12/2018
+Date : 3/12/2018
 
 Basic Operations in TensorFlow 
 Code 101
