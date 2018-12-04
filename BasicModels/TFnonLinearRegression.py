@@ -4,8 +4,8 @@ Author : Amin Golnari
 TF Version : 1.12.0
 Date : 4/12/2018
 
-TensorFlow Linear Regression
-Code 201
+TensorFlow nonLinear Regression
+Code 202
 """
 
 import numpy as np
