@@ -45,10 +45,6 @@ Train = tf.train.GradientDescentOptimizer(lr).minimize(loss)
 Sess = tf.Session()
 Sess.run(tf.global_variables_initializer())
 
-# Calculate the Accuracy
-Prediction = tf.equal(tf.argmax(Out, 1), tf.argmax(Target, 1))
-Accuracy = tf.reduce_mean(tf.cast(Prediction, tf.float32))
-
 # Train The Model
 for i in range(Epochs):
 	Sess.run(Train, feed_dict = {Input: x, Target: y})
