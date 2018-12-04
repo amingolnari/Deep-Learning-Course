@@ -4,7 +4,7 @@ Author : Amin Golnari
 TF Version : 1.12.0
 Date : 4/12/2018
 
-TensorFlow Cicle Classification and Visualiz with TensorBoard
+TensorFlow Circle Classification and Visualize with TensorBoard
 Code 204
 """
 
