@@ -1,4 +1,4 @@
-# Deep-Learning-Course
+# Deep Learning Course
 ![tfkeras](https://user-images.githubusercontent.com/39456500/49464754-111c4d00-f811-11e8-928d-b7f0b7b326ad.jpg)
 
 All courses I am doing right now! 
