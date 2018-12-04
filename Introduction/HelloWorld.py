@@ -4,8 +4,8 @@ Author : Amin Golnari
 TF Version : 1.12.0
 Date : 3/12/2018
 
-Basic Operations in TensorFlow 
-Code 102
+TensorFlow Hello World :) 
+Code 100
 """
 
 import tensorflow as tf
