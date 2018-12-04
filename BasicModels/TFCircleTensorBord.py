@@ -20,6 +20,7 @@ moon_X, moon_Y = datasets.make_circles(n_samples = 500,
                                        random_state = 0)
 
 # Initialization
+
 InputShape = 2
 NumClass = 1
 Hidden = 20
@@ -51,6 +52,7 @@ xy = np.c_[x.ravel(), y.ravel()]
 # Train Model
 with tf.Session() as Sess:
 	Sess.run(tf.global_variables_initializer())
+	# Write Summary in File From TensorFlow
 	tf.summary.scalar('Loss Function', loss)
 	tf.summary.histogram('Prediction', Out)
 	FWriter = tf.summary.FileWriter('./log', Sess.graph)
