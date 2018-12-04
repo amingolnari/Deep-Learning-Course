@@ -13,6 +13,7 @@ import tensorflow as tf
 tf.reset_default_graph() # Reset Graph
 import matplotlib.pyplot as plt
 from sklearn import datasets
+
 # Make Moon Data
 moon_X, moon_Y = datasets.make_circles(n_samples = 500,
                                        factor = .2,
@@ -20,7 +21,6 @@ moon_X, moon_Y = datasets.make_circles(n_samples = 500,
                                        random_state = 0)
 
 # Initialization
-
 InputShape = 2
 NumClass = 1
 Hidden = 20
@@ -52,7 +52,7 @@ xy = np.c_[x.ravel(), y.ravel()]
 # Train Model
 with tf.Session() as Sess:
 	Sess.run(tf.global_variables_initializer())
-	# Write Summary in File From TensorFlow
+	# Write Summary in File (TensorBoard)
 	tf.summary.scalar('Loss Function', loss)
 	tf.summary.histogram('Prediction', Out)
 	FWriter = tf.summary.FileWriter('./log', Sess.graph)
