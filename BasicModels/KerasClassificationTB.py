@@ -4,7 +4,7 @@ Author : Amin Golnari
 Keras Version : 2.2.4
 Date : 4/12/2018
 
-Keras Cicle Classification and Visualiz with TensorBoard
+Keras Circle Classification and Visualize with TensorBoard
 Code 205
 """
 
