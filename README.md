@@ -37,3 +37,5 @@ All courses I am doing right now!
 - [TFConvNetMNIST.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/DeepModels/TFConvNetMNIST.py)
 ## Keras CNN Classification on MNIST Data
 - [KerasConvNetMNIST.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/DeepModels/KerasConvNetMNIST.py)
+
+![mnist](https://user-images.githubusercontent.com/39456500/49469683-6a8a7900-f81d-11e8-8c67-3a31bacf25f8.jpg)
