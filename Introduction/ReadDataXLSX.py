@@ -34,6 +34,7 @@ def LoadData(Excel, X, Y, Shuffle = True):
 	X = np.expand_dims(X, axis = 2)
 	return X, Y
 
+
 if __name__ == "__main__":
 	Excel = Readxlsx('Files/SAMPLE.xlsx', 'Data')
 	X = np.zeros((len(Excel), 3), dtype = 'float32')
