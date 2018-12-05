@@ -11,6 +11,8 @@ All courses I am doing right now!
 - [Part 2 BasicTwo.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/Introduction/BasicTwo.py)
 ## TensorFlow's Eager API
 - [EagerAPI.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/Introduction/EagerAPI.py)
+## Load Data From Excel File with Pandas
+- [ReadDataXLSX.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/Introduction/ReadDataXLSX.py)
 
 # Basic Models
 ## TensorFlow Linear Regression
