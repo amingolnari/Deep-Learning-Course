@@ -28,12 +28,11 @@ All courses I am doing right now!
 ## TensorFlow Circle Classification and Visualize with TensorBoard
 - [TFCircleTensorBoard.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/BasicModels/TFCircleTensorBoard.py)
 
-![tbv2](https://user-images.githubusercontent.com/39456500/49498117-4495c080-f87f-11e8-9f58-c60e55310ee8.gif)
-
 ![tfcircle](https://user-images.githubusercontent.com/39456500/49467402-a6224480-f817-11e8-9a95-0d34b4c3d62a.gif)
 ## Keras Circle Classification and Visualize with TensorBoard
 - [KerasClassificationTB.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/BasicModels/KerasClassificationTB.py)
 
+![tbv2](https://user-images.githubusercontent.com/39456500/49498117-4495c080-f87f-11e8-9f58-c60e55310ee8.gif)
 # Deep Models
 ## TensorFlow CNN Classification on MNIST Data
 - [TFConvNetMNIST.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/DeepModels/TFConvNetMNIST.py)
