@@ -16,7 +16,7 @@ All courses I am doing right now!
 ## TensorFlow Linear Regression
 - [TFLinearRegression.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/BasicModels/TFLinearRegression.py)
 
-![linear](https://user-images.githubusercontent.com/39456500/49505232-8bd87d00-f890-11e8-9fac-7e35fb08df74.gif)
+![linear2](https://user-images.githubusercontent.com/39456500/49505435-030e1100-f891-11e8-95e1-3074fbd12a61.gif)
 ## TensorFlow nonLinear Regression
 - [TFnonLinearRegression.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/BasicModels/TFnonLinearRegression.py)
 
