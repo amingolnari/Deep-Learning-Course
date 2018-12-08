@@ -107,7 +107,7 @@ class Call(Callback):
 		
 	def on_epoch_begin(self, epoch, logs=None):
 		# Append Learning Rate to learninrate
-    self.learninrate.append(K.get_value(self.model.optimizer.lr))
+		self.learninrate.append(K.get_value(self.model.optimizer.lr))
 		 
 	def on_epoch_end(self, epoch, logs=None):
 		# Stop Train when loss < MinLoss
