@@ -23,10 +23,10 @@ import matplotlib.pyplot as plt
 def LoadData():
     (Xtrain, Ytrain), (Xtest, Ytest) = mnist.load_data()
     Xtrain = Xtrain.reshape(60000, 28, 28, 1).astype('float32')
-    Xtrain = Xtrain / 255
+    Xtrain = Xtrain / 255 # Normalize to 0-1
     Xtest = Xtest.reshape(10000, 28, 28, 1).astype('float32')
     Xtest = Xtest / 255
-    Ytrain = to_categorical(Ytrain, 10)
+    Ytrain = to_categorical(Ytrain, 10) # for exam Label 2 : [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
     Ytest = to_categorical(Ytest, 10)
 
     return (Xtrain, Xtest), (Ytrain, Ytest)
