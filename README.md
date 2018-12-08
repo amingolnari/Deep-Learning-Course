@@ -42,7 +42,7 @@ All courses I am doing right now!
 - [KerasConvNetMNIST.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/DeepModels/KerasConvNetMNIST.py)
 
 ![mnist](https://user-images.githubusercontent.com/39456500/49469683-6a8a7900-f81d-11e8-8c67-3a31bacf25f8.jpg)
-## Keras Using Callback
+## Using Callback in Keras
 Stop Training with validation loss Check
 
 Change Learning Rate Per (n) Epoch
