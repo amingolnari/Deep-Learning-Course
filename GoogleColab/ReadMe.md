@@ -1,1 +1,1 @@
-# Google Colab Notebooks
+# Google Colab (Jupyter) Notebooks
