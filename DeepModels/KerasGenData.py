@@ -49,7 +49,7 @@ def ShowRandomSamples(Data):
 	return
 
 def main():
-	Path = 'Files/Data/'
+	Path = 'Data/'
 	(XTrain, YTrain), (XTest, YTest) = GenData(Path)
 	XTrain /= 255.0
 	XTest /= 255.0
