@@ -60,6 +60,6 @@ Save Learning Rate Per Epoch
 ![cifar10](https://user-images.githubusercontent.com/39456500/49702005-d77c8500-fc08-11e8-863a-e94dd97a1336.png)
 
 ## (Dog vs Cat) Keras Generate Batches of Tensor Image Data from Directory 
--[KerasGenData.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/DeepModels/KerasGenData.py)
+- [KerasGenData.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/DeepModels/KerasGenData.py)
 
 ![catvsdog](https://user-images.githubusercontent.com/39456500/49757665-3954f180-fcd2-11e8-8dbf-81406a67b58d.png)
