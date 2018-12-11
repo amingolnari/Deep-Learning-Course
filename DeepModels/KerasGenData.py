@@ -22,7 +22,7 @@ def GenData(Path, RGBmode = True):
 	TrainData = gen.flow_from_directory(Path + 'Train', shuffle = True,
 	                                    color_mode = color_mode,
 	                                    batch_size = 490, # All Images in Folder
-	                                    target_size = (100, 100), # Resize Image to (64, 64, Channel)
+	                                    target_size = (100, 100), # Resize Image to (100, 100, Channel)
 	                                    class_mode = 'binary') # Cat vs Dog (2 Classes)
 	TestData = gen.flow_from_directory(Path + 'Test', shuffle = False,
 	                                    color_mode = color_mode,
