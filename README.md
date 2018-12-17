@@ -57,6 +57,9 @@ Save Learning Rate Per Epoch
 
 ![catvsdog](https://user-images.githubusercontent.com/39456500/49757665-3954f180-fcd2-11e8-8dbf-81406a67b58d.png)
 
+## Keras Generative Adversarial Network (GAN) on MNIST Data
+- [KerasGAN.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/DeepModels/KerasGAN.py)
+
 # Google Colab Files
 ## Keras Cifar10 Convolutional Neural Networks
 - [KerasCifar10.ipynb](https://github.com/amingolnari/Deep-Learning-Course/blob/master/GoogleColab/KerasCifar10.ipynb)
