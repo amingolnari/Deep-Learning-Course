@@ -52,6 +52,10 @@ Save Learning Rate Per Epoch
 
 ![lr](https://user-images.githubusercontent.com/39456500/49688846-792ea400-fb2d-11e8-9255-25b58a976cac.png)
 
+## (Dog vs Cat) Keras Generate Batches of Tensor Image Data from Directory 
+- [KerasGenData.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/DeepModels/KerasGenData.py)
+
+![catvsdog](https://user-images.githubusercontent.com/39456500/49757665-3954f180-fcd2-11e8-8dbf-81406a67b58d.png)
 
 # Google Colab Files
 ## Keras Cifar10 Convolutional Neural Networks
@@ -59,7 +63,8 @@ Save Learning Rate Per Epoch
 
 ![cifar10](https://user-images.githubusercontent.com/39456500/49702005-d77c8500-fc08-11e8-863a-e94dd97a1336.png)
 
-## (Dog vs Cat) Keras Generate Batches of Tensor Image Data from Directory 
-- [KerasGenData.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/DeepModels/KerasGenData.py)
+## Keras LSTM on IMDB Dataset
+- [KerasRNNimdb.ipynb](https://github.com/amingolnari/Deep-Learning-Course/blob/master/GoogleColab/KerasRNNimdb.ipynb)
 
-![catvsdog](https://user-images.githubusercontent.com/39456500/49757665-3954f180-fcd2-11e8-8dbf-81406a67b58d.png)
+## Save and Load Keras Model (Jason and HDF5)
+- [SaveLoadKerasModel.ipynb](https://github.com/amingolnari/Deep-Learning-Course/blob/master/GoogleColab/SaveLoadKerasModel.ipynb)
