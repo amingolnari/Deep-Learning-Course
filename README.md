@@ -3,6 +3,10 @@
 
 All courses I am doing right now! 
 
+## Generate Fake Data with Deep Convolutional Network
+
+![movie](https://user-images.githubusercontent.com/39456500/52300592-81745580-299d-11e9-8b09-a0f5e448e179.gif)
+
 # Introduction
 ## TensorFlow Hello World
 - [HelloWorld.py](https://github.com/amingolnari/Deep-Learning-Course/blob/master/Introduction/HelloWorld.py)
