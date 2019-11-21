@@ -23,20 +23,20 @@ from datetime import datetime
 __author__ = 'aGn'
 
 
-def KerasModel(Hidden, InputShape, NumClass, lr):
+def tf_keras_model(hidden, input_shape, num_class, lr):
     """
     Make tf.keras model by a hidden layer
-    :param Hidden: Number of Hidden Neuron
-    :param InputShape:
-    :param NumClass:
+    :param hidden: Number of Hidden Neuron
+    :param input_shape:
+    :param num_class:
     :param lr:
-    :return:
+    :return: A tf_keras_model.
     """
     model = tf.keras.models.Sequential()
-    model.add(tf.keras.layers.Dense(Hidden, input_shape=[InputShape, ],
+    model.add(tf.keras.layers.Dense(hidden, input_shape=[input_shape, ],
                                     activation='tanh',
                                     use_bias=True))
-    model.add(tf.keras.layers.Dense(NumClass,
+    model.add(tf.keras.layers.Dense(num_class,
                                     activation='sigmoid',
                                     use_bias=True))
     # Adam Optimizer with Binary Cross Entropy Loss Function
@@ -46,56 +46,47 @@ def KerasModel(Hidden, InputShape, NumClass, lr):
     return model
 
 
-def PlotClassification(model, moon_X, moon_Y):
-    # For Contour Prediction
+def plot_classification(model, moon_x, moon_y):
+    """For Contour Prediction"""
+
     x, y = np.meshgrid(np.linspace(-1.5, 1.5, 200),
                        np.linspace(-1.5, 1.5, 200))
     xy = np.c_[x.ravel(), y.ravel()]
-    Predict = model.predict(xy)
-    Predict = Predict.reshape(x.shape)
+    predict = model.predict(xy)
+    predict = predict.reshape(x.shape)
     plt.cla()
-    plt.contourf(x, y, Predict, cmap = 'bwr', alpha = 0.2)
-    plt.plot(moon_X[moon_Y == 0, 0], moon_X[moon_Y == 0, 1], 'ob')
-    plt.plot(moon_X[moon_Y == 1, 0], moon_X[moon_Y == 1, 1], 'or')
+    plt.contourf(x, y, predict, cmap='bwr', alpha=0.2)
+    plt.plot(moon_x[moon_y == 0, 0], moon_x[moon_y == 0, 1], 'ob')
+    plt.plot(moon_x[moon_y == 1, 0], moon_x[moon_y == 1, 1], 'or')
     plt.show()
 
 
 def main():
-    global MinLoss, ChangePer
-
     # Make Moon Data
-    moon_X, moon_Y = \
+    moon_x, moon_y = \
         datasets.make_circles(
-            n_samples = 500,
-            factor = .2,
-            noise = .1,
-            random_state = 0)
+            n_samples=500,
+            factor=.2,
+            noise=.1,
+            random_state=0)
 
-    # Initialization
-    InputShape = 2
-    NumClass = 1
-    Hidden = 20
-    lr = 0.5
-    MinLoss = 3.5e-3  # 0.0035
-    ChangePer = 5
-
-    # Make Keras Model
-    model = KerasModel(Hidden, InputShape, NumClass, lr)
+    # Make tf_keras Model
+    model = tf_keras_model(hidden=20, input_shape=2, num_class=1, lr=.5)
 
     '''TensorBoardCb'''
     log_dir = "logs/" + datetime.now().strftime("%Y%m%d-%H%M%S")
     tensor_board_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir)
 
     # Train Model
-    model.fit(moon_X, moon_Y,  # Inputs
+    model.fit(moon_x, moon_y,  # Inputs
               epochs=20,
               batch_size=128,
-              verbose=0,  # Show result method
+              verbose=1,  # Show result method
               validation_split=.2,  # Set 20% Train Data for Validation Check
               callbacks=[tensor_board_callback])
 
     # Plot Result
-    PlotClassification(model, moon_X, moon_Y)
+    plot_classification(model, moon_x, moon_y)
 
 
 if __name__ == '__main__':
