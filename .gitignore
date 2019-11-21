@@ -105,3 +105,4 @@ venv.bak/
 
 .idea/
 idea/
+DeepModels/logs/2*
