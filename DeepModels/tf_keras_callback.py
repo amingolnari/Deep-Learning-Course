@@ -88,7 +88,7 @@ def main():
 
     # Train Model
     model.fit(moon_X, moon_Y,  # Inputs
-              epochs=100,
+              epochs=20,
               batch_size=128,
               verbose=0,  # Show result method
               validation_split=.2,  # Set 20% Train Data for Validation Check
