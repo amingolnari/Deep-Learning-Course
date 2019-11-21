@@ -18,10 +18,6 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 from sklearn import datasets
-from keras import backend as K
-from keras.layers import Dense
-from keras.models import Sequential
-from keras.optimizers import Adam
 from datetime import datetime
 
 __author__ = 'aGn'
@@ -36,17 +32,17 @@ def KerasModel(Hidden, InputShape, NumClass, lr):
     :param lr:
     :return:
     """
-    model = Sequential()
-    model.add(Dense(Hidden, input_shape = [InputShape, ],
-                    activation = 'tanh',
-                    use_bias = True))
-    model.add(Dense(NumClass,
-                    activation = 'sigmoid',
-                    use_bias = True))
+    model = tf.keras.models.Sequential()
+    model.add(tf.keras.layers.Dense(Hidden, input_shape=[InputShape, ],
+                                    activation='tanh',
+                                    use_bias=True))
+    model.add(tf.keras.layers.Dense(NumClass,
+                                    activation='sigmoid',
+                                    use_bias=True))
     # Adam Optimizer with Binary Cross Entropy Loss Function
-    model.compile(Adam(lr = lr),
-                  loss = 'binary_crossentropy',
-                  metrics = ['accuracy'])
+    model.compile(tf.keras.optimizers.Adam(lr=lr),
+                  loss='binary_crossentropy',
+                  metrics=['accuracy'])
     return model
 
 
@@ -80,9 +76,7 @@ def main():
     NumClass = 1
     Hidden = 20
     lr = 0.5
-    Epochs = 100
-    Batch = 128
-    MinLoss = 3.5e-3 # 0.0035
+    MinLoss = 3.5e-3  # 0.0035
     ChangePer = 5
 
     # Make Keras Model
@@ -93,23 +87,15 @@ def main():
     tensor_board_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir)
 
     # Train Model
-    model.fit(moon_X, moon_Y, # Inputs
-              epochs=Epochs,
-              batch_size=Batch,
+    model.fit(moon_X, moon_Y,  # Inputs
+              epochs=100,
+              batch_size=128,
               verbose=0,  # Show result method
               validation_split=.2,  # Set 20% Train Data for Validation Check
               callbacks=[tensor_board_callback])
 
     # Plot Result
     PlotClassification(model, moon_X, moon_Y)
-  
-    # Plot Learning Rate in Train Epochs
-    plt.plot(call.learninrate, 'ro')
-    plt.grid()
-    plt.xlabel('Epochs')
-    plt.ylabel('Learning Rate')
-    plt.xlim(-0.1, len(call.learninrate)+.1)
-    plt.show()
 
 
 if __name__ == '__main__':
