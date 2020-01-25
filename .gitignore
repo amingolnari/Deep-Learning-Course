@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+.idea/
+idea/
+DeepModels/logs/2*
